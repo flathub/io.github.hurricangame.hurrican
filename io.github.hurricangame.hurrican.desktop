@@ -4,6 +4,7 @@ Type=Application
 Terminal=false
 Icon=io.github.hurricangame.hurrican
 Exec=hurrican
+Path=/tmp/
 Name=Hurrican
 Comment=Freeware jump and shoot game created by Poke53280
 Categories=Game;
