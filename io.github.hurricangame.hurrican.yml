@@ -1,6 +1,6 @@
 app-id: io.github.hurricangame.hurrican
 runtime: org.freedesktop.Platform
-runtime-version: '21.08'
+runtime-version: '22.08'
 sdk: org.freedesktop.Sdk
 command: hurrican
 finish-args:
@@ -45,7 +45,7 @@ modules:
     sources:
       - type: git
         url: https://github.com/HurricanGame/Hurrican
-        commit: cb4d00876e062a5d415d3eca45488344493313f0
+        commit: 2a9257957101f4c525dff58027336a2b38661bbd
       - type: file
         path: io.github.hurricangame.hurrican.desktop
       - type: file
