@@ -45,7 +45,7 @@ modules:
     sources:
       - type: git
         url: https://github.com/HurricanGame/Hurrican
-        commit: fe52996051d83c026b5b4b195bc95e8ef595cf34
+        commit: 9b8e82f7205ba1d685acaf026fdbd296d051b2ea
       - type: file
         path: io.github.hurricangame.hurrican.desktop
       - type: file
