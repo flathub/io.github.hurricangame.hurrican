@@ -38,9 +38,9 @@ modules:
       - desktop-file-install ../../io.github.hurricangame.hurrican.desktop --dir /app/share/applications
       - install -Dm644 ../../io.github.hurricangame.hurrican.metainfo.xml /app/share/metainfo/io.github.hurricangame.hurrican.metainfo.xml
       - |
-        for px in 16 32 48 64 128; do
-          convert ../Hurrican.ico -thumbnail ${px}x${px} -alpha on -background none -flatten hurrican_${px}x${px}.png
-          install -Dm644 hurrican_${px}x${px}.png /app/share/icons/hicolor/${px}x${px}/apps/io.github.hurricangame.hurrican.png
+        for s in 16 32 48 64 128; do
+          gst-launch-1.0 filesrc location="../Hurrican.ico" ! gdkpixbufdec ! videoscale method=nearest-neighbour ! video/x-raw,width=${s},height=${s} ! pngenc ! filesink location="icon.png"
+          install -Dm644 icon.png /app/share/icons/hicolor/${s}x${s}/apps/io.github.hurricangame.hurrican.png
         done
     sources:
       - type: git
@@ -50,15 +50,3 @@ modules:
         path: io.github.hurricangame.hurrican.desktop
       - type: file
         path: io.github.hurricangame.hurrican.metainfo.xml
-    modules:
-      - name: ImageMagick
-        config-opts:
-          - --disable-static
-          - --disable-docs
-          - --with-pic
-        sources:
-          - type: archive
-            url: https://github.com/ImageMagick/ImageMagick/archive/7.0.8-65.tar.gz
-            sha256: 14afaf722d8964ed8de2ebd8184a229e521f1425e18e7274806f06e008bf9aa7
-        cleanup:
-          - '*'
