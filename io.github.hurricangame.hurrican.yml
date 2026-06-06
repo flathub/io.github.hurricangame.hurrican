@@ -9,6 +9,13 @@ finish-args:
   - --socket=wayland
   - --socket=fallback-x11
   - --share=ipc
+cleanup:
+  - /include
+  - /lib/pkgconfig
+  - /share/doc
+  - /share/man
+  - '*.la'
+  - '*.a'
 modules:
   - shared-modules/SDL2/SDL2_image.json
 
