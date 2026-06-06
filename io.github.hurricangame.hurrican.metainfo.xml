@@ -1,26 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<component type="desktop">
+<component type="desktop-application">
   <id>io.github.hurricangame.hurrican</id>
   <name>Hurrican</name>
   <project_license>MIT AND CC-BY-NC-4.0</project_license>
-  <summary>Freeware jump and shoot game created by Poke53280</summary>
   <metadata_license>CC0-1.0</metadata_license>
+  <summary>Freeware jump and shoot game created by Poke53280</summary>
   <url type="homepage">https://github.com/HurricanGame/Hurrican</url>
+  <url type="bugtracker">https://github.com/HurricanGame/Hurrican/issues</url>
+  <url type="vcs-browser">https://github.com/HurricanGame/Hurrican</url>
+  <launchable type="desktop-id">io.github.hurricangame.hurrican.desktop</launchable>
+  <developer id="io.github.hurricangame">
+    <name>HurricanGame </name>
+  </developer>
   <description>
-    <p>
-      Freeware jump and shoot game created by Poke53280
-    </p>
+    <p>Freeware jump and shoot game created by Poke53280</p>
   </description>
   <screenshots>
     <screenshot type="default">
-      <image>https://github.com/HurricanGame/Hurrican/wiki/images/level1.png</image>
+      <image>https://imgproxy.flathub.org/insecure/dpr:2/f:avif/rs:fill-down/aHR0cHM6Ly9kbC5mbGF0aHViLm9yZy9tZWRpYS9pby5naXRodWIuaHVycmljYW5nYW1lLmh1cnJpY2FuLXN0YWJsZS83NTJ4NDIzL2lvLmdpdGh1Yi5odXJyaWNhbmdhbWUuaHVycmljYW4tYmYyYTk4MTJjOTg3NWQ2YmUzYjI3Y2IxY2UxOTJhODUucG5n</image>
     </screenshot>
   </screenshots>
   <releases>
     <release version="1.0.1" date="2023-03-14"/>
     <release version="1.0" date="2022-04-03"/>
   </releases>
-  <content_rating type="oars-1.0">
+  <content_rating type="oars-1.1">
     <content_attribute id="violence-fantasy">moderate</content_attribute>
     <content_attribute id="language-profanity">moderate</content_attribute>
   </content_rating>
